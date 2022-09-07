@@ -34,14 +34,17 @@ group :development do
   # https://github.com/alexch/rerun
   gem "rerun"
 
-  gem "pry"
-end
-
-# These gems will only be used when we are running tests
-group :test do
+  group :test do
   gem "database_cleaner"
   gem "rspec"
   gem "rack-test", "~> 1.1"
 end
+
+gem 'puma'
+
+  gem "pry"
+end
+
+# These gems will only be used when we are running tests
 
 
